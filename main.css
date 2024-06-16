@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Включает padding и borders в общую ширину и высоту элемента */
 }
 
 body {
     position: relative;
+    overflow: hidden; /* Предотвращает появление полос прокрутки */
 }
 
-/*Main page*/
+/*Главная страница*/
 
-.background{
+.background {
     background-image: url(https://cybersport.metaratings.ru/storage/images/61/87/6187388e0f14091d5aca131b4b35392d.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-   width: 100vh;
+    width: 100vw; /* Убедитесь, что фон покрывает всю ширину области просмотра */
 }
 
 .menu {
@@ -32,23 +34,21 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000; 
- }
- 
+}
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     transition: transform 0.5s ease;
     font-family: 'Impact', fantasy;
-    color:#2B094D
+    color: #2B094D;
 }
 
 a:hover {
     transform: scale(1.5); 
 }
 
-
-/*Table*/
+/*Таблица*/
 
 table {
     margin-top: 140px;
@@ -60,7 +60,6 @@ table {
 }
 
 th {
-
     font-size: 26px;
     font-family: 'Impact', fantasy;
     padding: 8px;
@@ -69,31 +68,24 @@ th {
     background-color: #201F56; 
     color: #58A0FC;
     text-align: center;
-
 }
 
-tr{
+tr {
     border-right: 5px solid #58A0FC;
-
 }
 
-.tables{
+.tables {
     display: flex;
     justify-content: space-between; 
 }
 
-
- 
-.fistrcow{
+.fistrcow {
     color: #ffffff;
     font-size: 3em;
-    font-family:'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
-
-
-
-/*Calculator*/
+/*Калькулятор*/
 
 .calculator {
     padding-top: 150px;
@@ -102,14 +94,14 @@ tr{
 }
 
 .calculator-container { 
-    width: 400PX;
+    width: 400px;
     padding: 20px;
     border: 5px solid #2B094D;
-    background-color:#ef3151;
+    background-color: #ef3151;
     font-size: 26px;
     font-family: 'Impact', fantasy;
     border-radius: 15px;
-    color:#2B094D
+    color: #2B094D;
 }
 
 .calculator-container h2 {
@@ -128,7 +120,7 @@ tr{
     width: 100%;
     padding: 5px;
     margin-top: 5px;
-    background-color:#a796b8;
+    background-color: #a796b8;
     font-family: 'Impact', fantasy;
     font-size: 1.3em;
 }
@@ -139,17 +131,16 @@ tr{
     width: 100%;
     font-family: 'Impact', fantasy;
     font-size: 1.6em;
-    background-color:#a796b8;
+    background-color: #a796b8;
 }
 
 #result {
     text-align: center;
     font-family: 'Impact', fantasy;
-    font-size: 1.5em; /* Adjust the size as needed */
-    font-weight: bold; /* Make the text bold */
-    margin-top: 20px; /* Add some space above the result */
+    font-size: 1.5em; /* Настройте размер по необходимости */
+    font-weight: bold; /* Сделайте текст жирным */
+    margin-top: 20px; /* Добавьте немного пространства над результатом */
 }
-
 
 /*Раздел предложения*/
 
@@ -159,7 +150,6 @@ tr{
     font-size: 2em;
     padding: 20px;
     margin: 20px;
-  
     margin-bottom: 0;
     background-color: #ef3151;
     border: 5px solid #2B094D;
@@ -167,18 +157,11 @@ tr{
 }
 
 .Text p {
-
     display: inline;
-    color : rgb(93, 214, 93);
+    color: rgb(93, 214, 93);
 }
-
 
 .Predloj__razdel {
     position: absolute;
     bottom: 0;
 }
-
-
-
-
-
