@@ -4,6 +4,10 @@
     box-sizing: border-box; /* Включает padding и borders в общую ширину и высоту элемента */
 }
 
+#my{
+zoom: 100%;
+}
+
 body {
     position: relative;
     overflow: hidden; /* Предотвращает появление полос прокрутки */
