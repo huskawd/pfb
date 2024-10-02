@@ -39,7 +39,7 @@ function calculate() {
     const mmrMode = document.getElementById('mmrMode').value;
     const percentCount = parseInt(document.getElementById('percentCount').value) || 0;
 
-    const targetMmr = finalMmr || initialMmr 
+    const targetMmr = finalMmr || initialMmr + (25); 
 
     let currentMmr = initialMmr;
     let sum = 0;
@@ -56,8 +56,7 @@ function calculate() {
     }
 
     const totalSum = Math.floor(sum + (sum * (percentCount / 100))).toString().replace('.', ' ');
-    document.getElementById('result').innerText = FixPrice: ${ totalSum };
-
+    document.getElementById('result').innerText = `FixPrice: ${totalSum}`;
 }
 
 
