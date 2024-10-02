@@ -36,7 +36,6 @@ const FixPriceDuo = {
 function calculate() {
     const initialMmr = parseInt(document.getElementById('initialMmr').value);
     const finalMmr = parseInt(document.getElementById('finalMmr').value);
-    const countOfGames = parseInt(document.getElementById('countOfGames').value);
     const mmrMode = document.getElementById('mmrMode').value;
     const percentCount = parseInt(document.getElementById('percentCount').value) || 0;
 
@@ -57,9 +56,10 @@ function calculate() {
     }
 
     const totalSum = Math.floor(sum + (sum * (percentCount / 100))).toString().replace('.', ' ');
-document.getElementById('result').innerText = `FixPrice: ${totalSum}`;
+    document.getElementById('result').innerText = FixPrice: ${ totalSum };
 
 }
+
 
 
 
