@@ -39,7 +39,7 @@ function calculate() {
     const mmrMode = document.getElementById('mmrMode').value;
     const percentCount = parseInt(document.getElementById('percentCount').value) || 0;
 
-    const targetMmr = finalMmr || initialMmr + (countOfGames * 25);
+    const targetMmr = finalMmr || initialMmr 
 
     let currentMmr = initialMmr;
     let sum = 0;
